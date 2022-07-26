@@ -1,0 +1,389 @@
+@font-face {
+    font-family: 'Mulish';
+    src: local('Mulish'),
+    url(../fonts/Mulish-Bold.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: 'Mulish';
+    src: local('Mulish'),
+    url(../fonts/Mulish-Light.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: local('Inter'),
+    url(../fonts/Inter-Regular.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: local('Inter'),
+    url(../fonts/Inter-SemiBold.ttf) format('truetype')
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: local('Playfair Display'),
+    url(../fonts/PlayfairDisplay-Bold.ttf) format('truetype')
+}
+
+* {
+    font-family: 'Mulish';
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #F5F5F5;
+    position: relative;
+}
+
+li {
+    list-style-type: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 1120px;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 15px 0;
+    background-color: #F5F5F5;
+    z-index: 1;
+    margin: auto;
+}
+
+header nav {
+    display: flex;
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+}
+
+header nav ul li {
+    color: #B8BECD;
+}
+
+header nav ul li:hover {
+    color: #202336;
+}
+
+header nav ul li:not(:last-child) {
+    margin-right: 35px;
+}
+
+.img-logo {
+    background-image: url(../img/logo.svg);
+    width: 41px;
+    height: 41px;
+}
+
+.container-btns {
+    display: flex;
+}
+
+.log-btn {
+    border: 1px solid #FB8F1D;
+    border-radius: 8px;
+    padding: 8px 46px;
+    margin: 0 18px 0 34px;
+    color: #FB8F1D;
+}
+
+.log-btn:hover {
+    background-color: #FB8F1D;
+    color: #FFFFFF;
+}
+
+.reg-btn {
+    background: #FB8F1D;
+    border-radius: 8px;
+    padding: 8px 46px;
+    color: #FFFFFF;
+}
+
+.reg-btn:hover {
+    background: #fb7601;
+}
+
+main {
+    margin-top: 70px;
+    margin: auto;
+    width: 1120px;
+}
+
+.explore-travel-img {
+    background-image: url(../img/thousand-01\ 1.png);
+    background-repeat: no-repeat;
+    width: 506px;
+    height: 483px;
+}
+
+.block-explore-travel {
+    margin-top: 140px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.block-explore-travel input {
+    border: 0.8px solid #AFB0B9;
+    border-radius: 6px;
+    padding: 15px 50px 15px 20px;
+    outline: none;
+}
+
+.block-explore-travel h1 {
+    font: 700 64px 'Playfair Display';
+}
+
+.block-explore-travel p {
+    font: 600 22px 'Inter';
+}
+
+.container-inpts {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container-inpts div {
+    margin-bottom: 35px;
+}
+
+.container-inpts div:not(:last-child) {
+    margin-right: 30px;
+}
+
+.wrapper-explore-travel{
+    width: 500px;
+    height: 490px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.explore-btn {
+    background: #FB8F1D;
+    border-radius: 8px;
+    padding: 12px 40px;
+    color: #FFFFFF;
+    width: 80px;
+    text-align: center;
+}
+
+.explore-btn:hover {
+    background: #fb7601;
+}
+
+.block-way-world {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 250px;
+}
+
+.way-world-img {
+    background-image: url(../img/Thousand-02\ 1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 609px;
+    height: 484px;
+}
+
+.wrapper-way-world {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 450px;
+    height: 330px;
+}
+
+.wrapper-way-world h2 {
+    font: 700 36px 'Playfair Display';
+}
+
+.wrapper-way-world p {
+    font: 300 17px 'Mulish';
+    line-height: 30px;
+    color: #7D7987;
+}
+
+.way-btn {
+    background: #FB8F1D;
+    border-radius: 8px;
+    padding: 12px 40px;
+    font: 600 16px 'Inter';
+    color: #FFFFFF;
+    text-align: center;
+    width: 90px;
+}
+
+.way-btn:hover {
+    background: #fb7601;
+}
+
+.featured-destinations {
+    margin: 290px 0 230px 0;
+}
+
+.wrapper-destinations {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.wrapper-destinations h2 {
+    font: 700 36px 'Playfair Dispay';
+}
+
+.wrapper-destinations p {
+    font: 600 17px 'Inter';
+    color: #FB8F1D;
+}
+
+.wrapper-destinations p:hover {
+    color: #fb7601;
+}
+
+.wrapper-destinations p img {
+    margin-left: 11px;
+}
+
+.destinations-img {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dest-img-1 {
+    background-image: url(../img/Raja\ ampat.png);
+    background-repeat: no-repeat;
+    width: 261px;
+    height: 332px;
+}
+
+.dest-img-2 {
+    background-image: url(../img/Fanjingshan.png);
+    background-repeat: no-repeat;
+    width: 261px;
+    height: 332px;
+}
+
+.dest-img-3 {
+    background-image: url(../img/Vevey.png);
+    background-repeat: no-repeat;
+    width: 261px;
+    height: 332px;
+}
+
+.dest-img-4 {
+    background-image: url(../img/Skadar.png);
+    background-repeat: no-repeat;
+    width: 261px;
+    height: 332px;
+}
+
+.dest-img-1:hover,
+.dest-img-2:hover,
+.dest-img-3:hover,
+.dest-img-4:hover {
+    transform: scale(1.1);
+}
+
+.block-guides {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrapper-guides {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 450px;
+    height: 330px;
+}
+
+.wrapper-guides h2 {
+    font: 700 36px 'Playfair Display';
+}
+
+.wrapper-guides p {
+    font: 300 17px 'Mulish';
+    line-height: 30px;
+    color: #7D7987;
+}
+
+.guides-btn {
+    background: #FB8F1D;
+    border-radius: 8px;
+    padding: 12px 40px;
+    font: 600 16px 'Inter';
+    color: #FFFFFF;
+    text-align: center;
+    width: 90px;
+}
+
+.guides-btn:hover {
+    background: #fb7601;
+}
+
+.guides-img {
+    background-image: url(../img/Thousand-03.png);
+    background-repeat: no-repeat;
+    width: 599px;
+    height: 542px;
+}
+
+footer {
+    background-color: #ededef;
+    margin-top: 170px;
+}
+
+.wrapper-footer {
+    display: flex;
+    justify-content: space-between;
+    width: 1120px;
+    height: 240px;
+    margin: auto;
+    padding: 87px 0 120px 0;
+}
+
+.wrapper-footer p {
+    font: 300 17px 'Mulish';
+    line-height: 28px;
+    color: #848484;
+}
+
+.logo-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 340px;
+}
+
+.wrapper-footer .bld-p {
+    font: 700 19px 'Mulish';
+    color: #000000;
+}
+
+.destinations-footer,
+.shop-footer,
+.interests-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.destinations-footer p:hover,
+.shop-footer p:hover,
+.interests-footer p:hover {
+    color: #fb7601;
+}
