@@ -205,17 +205,21 @@ main {
     height: 330px;
 }
 
-.wrapper-way-world h2 {
+.wrapper-way-world h2,
+.wrapper-destinations h2,
+.wrapper-guides h2 {
     font: 700 36px 'Playfair Display';
 }
 
-.wrapper-way-world p {
+.wrapper-way-world p,
+.wrapper-guides p {
     font: 300 17px 'Mulish';
     line-height: 30px;
     color: #7D7987;
 }
 
-.way-btn {
+.way-btn,
+.guides-btn {
     background: #FB8F1D;
     border-radius: 8px;
     padding: 12px 40px;
@@ -225,7 +229,8 @@ main {
     width: 90px;
 }
 
-.way-btn:hover {
+.way-btn:hover,
+.guides-btn:hover {
     background: #fb7601;
 }
 
@@ -238,10 +243,6 @@ main {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 50px;
-}
-
-.wrapper-destinations h2 {
-    font: 700 36px 'Playfair Dispay';
 }
 
 .wrapper-destinations p {
@@ -311,30 +312,6 @@ main {
     height: 330px;
 }
 
-.wrapper-guides h2 {
-    font: 700 36px 'Playfair Display';
-}
-
-.wrapper-guides p {
-    font: 300 17px 'Mulish';
-    line-height: 30px;
-    color: #7D7987;
-}
-
-.guides-btn {
-    background: #FB8F1D;
-    border-radius: 8px;
-    padding: 12px 40px;
-    font: 600 16px 'Inter';
-    color: #FFFFFF;
-    text-align: center;
-    width: 90px;
-}
-
-.guides-btn:hover {
-    background: #fb7601;
-}
-
 .guides-img {
     background-image: url(../img/Thousand-03.png);
     background-repeat: no-repeat;
@@ -382,8 +359,158 @@ footer {
     justify-content: space-between;
 }
 
-.destinations-footer p:hover,
-.shop-footer p:hover,
-.interests-footer p:hover {
+.destinations-footer p:not(:first-child):hover,
+.shop-footer p:not(:first-child):hover,
+.interests-footer p:not(:first-child):hover {
     color: #fb7601;
+}
+
+@media screen and (max-width: 400px) {
+    body {
+        margin-left: 30px;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        max-width: 400px;
+        position: fixed;
+        height: 140px;
+        right: inherit;
+        margin-left: 30px;
+    }
+
+    header nav {
+        flex-direction: column;
+        justify-content: space-between;
+        height: 80px;
+    }
+
+    .container-btns {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .log-btn {
+        margin: 0;
+    }
+
+    .log-btn,
+    .reg-btn {
+        padding: 6px 38px;
+    }
+
+    main {
+        max-width: 100%;
+    }
+
+    .block-explore-travel {
+        margin-top: 190px;
+    }
+
+    .block-explore-travel h1 {
+        font-size: 45px;
+        text-align: center;
+    }
+
+    .block-explore-travel p {
+        text-align: center;
+        margin: 20px 0 20px 0;
+    }
+
+    .container-inpts {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        max-width: 400px;
+    }
+
+    .container-inpts div:not(:last-child) {
+        margin-right: 0;
+    }
+
+    .explore-btn {
+        margin: 20px auto;
+        padding: 8px 20px;
+    }
+
+    .explore-travel-img {
+        display: none;
+    }
+
+    .block-way-world {
+        margin-top: 100px;
+    }
+
+    .way-world-img {
+        display: none;
+    }
+
+    .wrapper-way-world {
+        align-items: center;
+        height: 320px;
+    }
+
+    .wrapper-way-world h2,
+    .wrapper-guides h2 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .wrapper-way-world p,
+    .wrapper-guides p {
+        font-size: 15px;
+    }
+
+    .way-btn,
+    .guides-btn {
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+
+    .featured-destinations {
+        margin: 100px 0 100px 0;
+    }
+
+    .wrapper-destinations {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .wrapper-destinations h2 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    .destinations-img {
+        display: none;
+    }
+
+    .wrapper-guides {
+        align-items: center;
+        height: 300px;
+    }
+
+    .guides-img {
+        display: none;
+    }
+
+    footer {
+        margin-top: 0;
+        background-color: inherit;
+    }
+
+    .wrapper-footer {
+        flex-direction: column;
+        height: 850px;
+    }
+
+    .wrapper-footer p {
+        font-size: 14px;
+    }
+
+    .logo-footer {
+        order: 1;
+        height: 160px;
+    }
 }
